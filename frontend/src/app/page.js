@@ -62,9 +62,9 @@ export default function Home() {
           </Swiper>
         </section>
 
-        <section className="py-10">
+        <section className="py-16">
           <div>
-            <h2 className="text-2xl font-bold tracking-tight mb-6 capitalize">
+            <h2 className="text-2xl font-medium tracking-tight mb-6 uppercase">
               Top Deals on Sneakers
             </h2>
             {loading ? (
@@ -100,7 +100,7 @@ export default function Home() {
             )}
           </div>
           <div className="mt-16">
-            <h2 className="text-2xl font-bold tracking-tight mb-6 capitalize">
+            <h2 className="text-2xl font-medium tracking-tight mb-6 uppercase">
               Trending Sneakers
             </h2>
             {loading ? (

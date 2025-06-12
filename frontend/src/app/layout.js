@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { AuthProvider } from "@/context/AuthContext";
+import Footer from "@/components/Footer";
 
 const inter = Inter({
   weight: ["100", "300", "400", "500", "600", "700", "900"],
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className}`}>
         <AuthProvider>{children}</AuthProvider>
+        <Footer />
       </body>
     </html>
   );

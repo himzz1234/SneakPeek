@@ -85,7 +85,7 @@ export default function Search() {
       <section className="max-w-[1480px] mx-auto">
         <Navbar />
       </section>
-      <section className="max-w-[1480px] mx-auto p-4 min-h-screen">
+      <section className="max-w-[1480px] mx-auto px-4 py-16 min-h-screen">
         {loading && currentPage === 1 ? (
           <div className="mt-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">

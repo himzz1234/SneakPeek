@@ -43,12 +43,12 @@ export default function Modal() {
 
   return (
     <>
-      <div className="mt-5">
+      <div className="ml-auto">
         <button
           onClick={auth?.user ? openModal : () => router.push("/sign-in")}
-          className="w-full active:scale-95 transition-all bg-black text-white rounded-md py-3"
+          className="text-sm bg-black text-white px-4 py-2 rounded transition-all"
         >
-          Track
+          Track Product
         </button>
       </div>
 

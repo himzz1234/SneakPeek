@@ -42,12 +42,12 @@ export default function ProductCard({ product }) {
       </div>
 
       <div>
-        <h4 className="text-sm font-medium uppercase text-gray-500 mt-2 tracking-tighter">
-          {product.brand}
-        </h4>
-        <h2 className="text-xl font-semibold uppercase tracking-tighter">
+        <h2 className="text-xl font-semibold uppercase tracking-tighter mt-2">
           {product.title}
         </h2>
+        <h4 className="font-medium capitalize text-gray-500 tracking-tighter">
+          {product.brand}
+        </h4>
       </div>
     </div>
   );

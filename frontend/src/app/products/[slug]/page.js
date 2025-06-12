@@ -91,7 +91,7 @@ export default function ProductDetails() {
         <Navbar />
       </section>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="flex gap-4">
             {productImages.length > 1 && (
@@ -154,9 +154,7 @@ export default function ProductDetails() {
                     </p>
                   </>
                 )}
-                <button className="ml-auto text-sm bg-black text-white px-4 py-2 rounded transition-all">
-                  Track Product
-                </button>
+                <Modal />
               </div>
             </div>
 

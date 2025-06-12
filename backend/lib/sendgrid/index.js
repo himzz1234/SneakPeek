@@ -10,7 +10,6 @@ export const Notification = {
 };
 
 export const generateEmailBody = (product, type) => {
-  console.log(product);
   const THRESHOLD_PERCENTAGE = 40;
 
   let subject = "";

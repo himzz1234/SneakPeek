@@ -9,7 +9,6 @@ import { FiSearch } from "react-icons/fi";
 import { BiLogOutCircle } from "react-icons/bi";
 import { motion } from "motion/react";
 import { publicAxios } from "@/lib/axios";
-import { FaRegStar } from "react-icons/fa";
 
 export default function Navbar() {
   const { auth, setAuth } = useAuth();
@@ -62,11 +61,11 @@ export default function Navbar() {
             className="bg-transparent outline-none"
           />
         </form>
-        {auth?.user && (
+        {auth?.user ? (
           <>
             <div
               onClick={() => setIsOpen(!isOpen)}
-              className="cursor-pointer relative w-11 h-11 rounded-full border p-1 overflow-hidden"
+              className="cursor-pointer relative w-11 h-11 rounded-full border border-gray-300 p-1 overflow-hidden"
             >
               <Image
                 src={auth?.user?.picture || "/assets/profile_default.png"}
@@ -116,6 +115,20 @@ export default function Navbar() {
               </div>
             </motion.div>
           </>
+        ) : (
+          <div
+            onClick={() => router.push("/sign-in")}
+            className="cursor-pointer relative w-11 h-11 rounded-full border border-gray-300 p-1 overflow-hidden"
+          >
+            <Image
+              src="/assets/profile_default.png"
+              alt="profile-picture"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-full object-cover"
+            />
+          </div>
         )}
       </div>
     </nav>
